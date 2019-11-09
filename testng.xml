@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "sdet-framework" parallel="false" verbose="1" thread-count="5">
+	
+	<listeners>
+	<listener class-name="com.inetBanking.Utilities.ExtentReporting"/> 
+	</listeners>
+	
+	<test name="BankingTest" >
+		
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<!-- <class name="com.inetBanking.testCases.TC_LoginTest_001"></class> -->
+			<!-- <class name="com.inetBanking.testCases.TC_LoginTest_DDT_001"></class> -->
+			
+			<class name="com.inetBanking.testCases.TC_AddCustomer_003"></class>
+			
+		
+		</classes>
+	
+	</test>
+
+
+</suite>
